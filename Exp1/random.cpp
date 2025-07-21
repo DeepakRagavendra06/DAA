@@ -14,9 +14,9 @@ int main(){
         int num=rand()%50000+1;
         nums.insert(num);
     }
-    ofstream f1("book_thickness1.txt");
+    ofstream f1("page_counts.txt");
     for(int num:nums){
-        f1<<num<<" ";
+        f1<<num<<endl;
     }
     f1.close();
     return 0;
